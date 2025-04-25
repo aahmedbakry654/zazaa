@@ -1,0 +1,16 @@
+.social-table {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 2rem;
+  }
+  
+  .social-table a {
+    color: gold;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .social-table a:hover {
+    color: white;
+    transform: scale(1.2);
+  }
