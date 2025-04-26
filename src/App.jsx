@@ -4,6 +4,7 @@ import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import FullscreenImage from './components/FullscreenImage';
 import VisitCounter from './components/VisitCounter';
+
 import './App.css';
 
 const App = () => {
@@ -19,34 +20,19 @@ const App = () => {
 
   return (
     <div className="App">
+      {/* اسمك في العنوان */}
+      <h2 style={{ textAlign: 'center', margin: '20px 0', color: '#333' }}>
+      
+      </h2>
+
+      {/* المكونات الرئيسية */}
       <Hero />
       <Gallery onImageClick={handleImageClick} />
-      <Footer />
+     
       <VisitCounter />
+      <Footer />
 
-      {/* By Ahmed Bakry */}
-      <div style={{
-        textAlign: 'center',
-        color: 'gold',
-        fontSize: '16px',
-        marginTop: '10px',
-        fontFamily: 'Cursive',
-        textShadow: '0 0 5px gold, 0 0 10px white',
-        animation: 'pulse 2s infinite'
-      }}>
-        By Ahmed Bakry
-      </div>
-
-      <style>
-        {`
-          @keyframes pulse {
-            0% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.05); opacity: 0.8; }
-            100% { transform: scale(1); opacity: 1; }
-          }
-        `}
-      </style>
-
+      {/* عرض الصورة لما تتفتح */}
       {fullscreenImage && (
         <FullscreenImage src={fullscreenImage} onClose={handleClose} />
       )}

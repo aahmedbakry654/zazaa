@@ -1,12 +1,16 @@
 import React from 'react';
-import SocialLinksTable from './SocialLinksTable';
+import SocialLinksTable from './SocialLinksTable'; // استيراد الجدول بدل ما نعيده
 import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <SocialLinksTable />
-    </footer>
+    <div className="footer">
+      <SocialLinksTable /> {/* هنا هنعرض اللينكات الجاهزة */}
+      
+      <div className="made-by">
+        By_Ahmed Bakry
+      </div>
+    </div>
   );
 };
 
