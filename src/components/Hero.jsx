@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <video className="hero-video" autoPlay loop muted>
-        <source src="public/videos/vedio2.mp4" type="video/mp4" />
+        <source src="/videos/vedio2.mp4" type="video/mp4" />
       </video>
       <div className="hero-content">
         <h1 className="decorated-text">Zaza Photographer</h1>
